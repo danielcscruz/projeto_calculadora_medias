@@ -53,7 +53,7 @@ function calculaMedia(){
 }
 function atualizaMedia(){
     const m = calculaMedia();
-    document.getElementById('media-final').innerText = m;
+    document.getElementById('media-final').innerText = m.toFixed(2);
     document.getElementById('resultado').innerText = m >= notaMinima ? 'Aprovado' : 'Reprovado';
     document.getElementById('resultado').className = m >= notaMinima ? 'resultado aprovado' : 'resultado reprovado';
 
